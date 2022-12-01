@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    /* --black:#0A0908;
+    --brown:#5E503F;
+    --blue:#22333B;
+    --cream:#C6AC8F; */
+    --tomato:#d86969;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding-inline: .5em;
+}
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    width: 100%;
+}
+.logo{
+    text-align: center;
+    margin-inline:.5em;
+}
+.logo h2{
+    color: var(--tomato);
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: .8;
+
+}
+.logo p{
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+.showcase{
+    margin-top: 1em;
+    background:var(--tomato);
+    height: 93vh;
+    position: relative;
+}
+.showcase .overlay{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, .2);
+}
+.showcase video{
+    height: inherit;
+    overflow: hidden;
+}
