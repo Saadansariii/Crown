@@ -23,6 +23,9 @@ a{
 li{
     list-style: none;
 }
+img{
+    width: 100%;
+}
 .container{
     max-width: 1000px;
     margin: auto;
@@ -55,16 +58,22 @@ li{
 .showcase{
     margin-top: 1em;
     background:var(--tomato);
-    height: 93vh;
+    height: 89.5vh;
     position: relative;
 }
 .showcase .overlay{
     position: absolute;
     width: 100%;
     height: inherit;
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .4);
 }
 .showcase video{
     height: inherit;
-    overflow: hidden;
+}
+.whatsapp-logo{
+    width: 60px;
+    background: transparent;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
 }
