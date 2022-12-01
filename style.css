@@ -18,7 +18,7 @@
     overflow-x: hidden;
     border: 0px;
 }
-p,h1,h2,h3,h4,li,a{
+p,h1,h2,h3,h4,li,a,.button{
     overflow: hidden;
 }
 body{
@@ -64,7 +64,7 @@ img{
     rotate: .125turn;
 }      
 .logo{
-    text-align: center;
+    /* text-align: center; */
     margin-inline:.5em;
 }
 .logo h2{
@@ -82,13 +82,13 @@ img{
 .showcase{
     margin-top: 1em;
     background:var(--tomato);
-    height: 90vh;
+    height: 30vh;
     position: relative;
 }
 .showcase .overlay{
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 30vh;
     background: rgba(0, 0, 0, .4);
 }
 .showcase .overlay,
@@ -96,7 +96,8 @@ img{
     overflow: hidden;
 }
 .showcase video{
-    height: 90vh;
+    height:30vh;
+    width:100%;
 }
 .whatsapp-logo{
     width: 60px;
