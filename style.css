@@ -6,12 +6,16 @@
     --blue:#22333B;
     --cream:#C6AC8F; */
     --tomato:#d86969;
+    --white:#ffffff;
+    --black:#1b1b1b;
+    --copper: #dc9d00;
 }
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    border: 0px;
 }
 body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
@@ -19,6 +23,7 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 li{
     list-style: none;
@@ -49,7 +54,7 @@ img{
     font-weight: 700;
     text-transform: uppercase;
     line-height: .8;
-
+    overflow: hidden;
 }
 .logo p{
     font-size: .8em;
@@ -58,22 +63,135 @@ img{
 .showcase{
     margin-top: 1em;
     background:var(--tomato);
-    height: 89.5vh;
+    height: 90vh;
     position: relative;
 }
 .showcase .overlay{
     position: absolute;
     width: 100%;
-    height: inherit;
+    height: 90vh;
     background: rgba(0, 0, 0, .4);
 }
+.showcase .overlay,
 .showcase video{
-    height: inherit;
+    overflow: hidden;
+}
+.showcase video{
+    height: 90vh;
 }
 .whatsapp-logo{
     width: 60px;
     background: transparent;
     position: fixed;
+    bottom: 3em;
+    right: 10px;
+    z-index: 3;
+}
+/* Enquiry */
+.enquiry{
+    background:var(--tomato);
+    color: var(--white);
+}
+.enquiry .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1em;
+}
+.enquiry .flex > p{
+    margin-top: .5em;
+    width: 80%;
+}
+.enquiry .flex a{
+    border: 2px solid var(--white);
+    padding: .5em 1.5em;
+    border-radius: 30px;
+    margin-block: 1em;
+}
+.enquiry .flex a:hover{
+    background:var(--white);
+    color: var(--tomato);
+}
+/* Products */
+.product{
+    background:var(--copper);
+    color:var(--black);
+    padding-block: 1em;
+}
+.product .brush h1{
+    font-size:2em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.product .about h2{
+    text-align: center;
+    font-size: 1.8em;
+}
+.product .about p{
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.1;
+    overflow: hidden;
+}
+
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.grid > *{
+    height: 300px;
+    width: 100%;
+    grid-column: 1/9;
+    margin-block: 1em;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+}
+.grid .img-1{
+    background: url('assets/product-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.grid .img-2{
+    background: url('assets/product-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.grid .img-3{
+    background: url('assets/product-3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.grid .img-4{
+    background: url('assets/product-4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.grid .title{
+    position: absolute;
     bottom: 5px;
-    right: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    color: #000;
+    height: 30px;
+    text-align: center;
+}
+.grid .title p{
+    font-size: 1.5em;
 }
