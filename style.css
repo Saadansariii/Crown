@@ -7,7 +7,7 @@
     --cream:#C6AC8F; */
     /* --tomato:#d86969; */
     --tomato:#a07200;
-    --white:#ffffff;
+    --white:#fff;
     --black:#1b1b1b;
     --copper: #dc9d00;
 }
@@ -17,6 +17,9 @@
     box-sizing: border-box;
     overflow-x: hidden;
     border: 0px;
+}
+p,h1,h2,h3,h4,li,a{
+    overflow: hidden;
 }
 body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
@@ -45,6 +48,21 @@ img{
     margin-top: 1em;
     width: 100%;
 }
+.button .line{
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+}
+.button[aria-expanded='true'] .line{
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}
+.button .hamburger{
+    transition: translate 1s , rotate 1s;
+}
+.button[aria-expanded='true'] .hamburger{
+    translate: 0px 0px;
+    rotate: .125turn;
+}      
 .logo{
     text-align: center;
     margin-inline:.5em;
@@ -92,6 +110,7 @@ img{
 .enquiry{
     background:var(--tomato);
     color: var(--white);
+    padding-block: 2em;
 }
 .enquiry .flex{
     display: flex;
@@ -118,10 +137,10 @@ img{
 /* Products */
 .product{
     background:var(--copper);
-    color:var(--black);
-    padding-block: 1em;
+    color:var(--white);
+    padding-block: 2em;
 }
-.product .brush h1{
+.product h1{
     font-size:2em;
     line-height: 1;
     font-weight: bold;
@@ -136,8 +155,7 @@ img{
     font-size: 1.3em;
     text-align: center;
     line-height: 1.1;
-    overflow: hidden;
-}
+  }
 
 
 
