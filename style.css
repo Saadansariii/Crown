@@ -83,13 +83,13 @@ img{
     margin-top: 1em;
     background:var(--black);
     color: black;
-    height: 30vh;
+    height: 28vh;
     position: relative;
 }
 .showcase .overlay{
     position: absolute;
     width: 100%;
-    height: 30vh;
+    height: 28vh;
     background: rgba(0, 0, 0, .4);
 }
 .showcase .overlay,
@@ -98,7 +98,7 @@ img{
     overflow: hidden;
 }
 .showcase video{
-    height:30vh;
+    height:28vh;
     width:100%;
 }
 .whatsapp-logo{
