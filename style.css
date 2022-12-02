@@ -23,6 +23,8 @@ p,h1,h2,h3,h4,li,a,.button{
 }
 body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    background:var(--black);
+    color: white;
 }
 a{
     text-decoration: none;
@@ -78,11 +80,11 @@ img{
 .logo p{
     font-size: .8em;
     letter-spacing: 2px;
+    color: white;
 }
 .showcase{
     margin-top: 1em;
     background:var(--black);
-    color: black;
     height: 27vh;
     position: relative;
 }
@@ -220,12 +222,18 @@ img{
     transform: translate(-50%);
     text-align: center;
     font-size: 1.2em;
-    padding: .2em .5em;
+    padding: .5em 1em;
+    margin-top: 1em;
+    border-radius: 30px;
+    background: white;
+    transition: .5s;
 }
-.product .container a:hover{
-    background: lightgray;
 
-    }
+.product .container a:hover{
+    background: #0095f6;
+    color: white;
+}
+
 
 
     .exp .grid{
@@ -242,13 +250,15 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
+        border: 2px solid white;
         transition: .3s background;
         cursor: pointer;
-        }
-        .exp .grid div:hover{
-            background:var(--black);
-            color: white;
+        color: white;
+    }
+    .exp .grid div:hover{
+            background:var(--white);
+            color: black;
+
         }
         .exp .grid span{
             font-size: 1.4em;
@@ -273,4 +283,46 @@ img{
     }
     .exp .grid div:nth-child(4) p{
         font-weight: bold;
+    }
+    .about{
+        margin-top: 2em;
+    }
+    .about .container .logo{
+        margin-block: 1em;
+        text-align: center;
+    }
+    .about .container h1{
+        font-size: 2.1em;
+    }
+    .about .logo h2{
+        font-size: 2em;
+    }
+    .about .logo p{
+        font-size: 1em;
+    }
+    .about .about-text p{
+        margin-block:.5em ;
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+    .about .useful-link{
+        margin-top: 2em;
+    }
+    .about .useful-link a{
+        margin-block: .2em;
+        font-size: 1.2em;
+        display: block;
+    }
+    .about .contact {
+        margin-block: 2em;
+    }
+    .about .contact p{
+        margin-block-end: 1em;
+    }
+    .main-footer {
+        padding-block: 1em;
+        text-align: center;
+        font-size: 1.2em;
+        background: white;
+        color: black;
     }
