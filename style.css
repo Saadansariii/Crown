@@ -363,6 +363,7 @@ img{
 
     /* Abouts  */
     .about-about{
+        margin-top: 2em;
         background: white;
         color: var(--black);
         height: 30vh;
@@ -396,4 +397,12 @@ img{
 .about-company .about-text p{
     margin-block:1em;
     color: #ddd;
+}
+
+/* Contact  */
+.contact-info{
+    background: red;
+}
+.contact-info .flex ion-icon{
+    font-size: 5em;
 }
