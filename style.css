@@ -131,13 +131,15 @@ img{
 }
 .enquiry .flex a{
     border: 2px solid var(--white);
+    position:relative;
+    transition: .5s background;
     padding: .5em 1.5em;
     border-radius: 30px;
     margin-block: 1em;
 }
 .enquiry .flex a:hover{
-    background:var(--black);
-    color: var(--white);
+    background:var(--white);
+    color: var(--black);
 }
 /* Products */
 .product{
@@ -207,7 +209,7 @@ img{
     left: 50%;
     transform: translate(-50%);
     width: 80%;
-    color: #000;
+    color: var(--white);
     height: 30px;
     text-align: center;
     font-size: .5em;
@@ -216,7 +218,7 @@ img{
     font-size: 1.5em;
 }
 .product .container a{
-    color: #0095f6;
+    color: var(--white);
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -224,14 +226,15 @@ img{
     font-size: 1.2em;
     padding: .5em 1em;
     margin-top: 1em;
-    border-radius: 30px;
-    background: white;
+    border-radius:30px;
+    background: var(--black);
     transition: .5s;
+    border: 2px solid white;
 }
 
 .product .container a:hover{
-    background: #0095f6;
-    color: white;
+    background: var(--white);
+    color: var(--black);
 }
 
 
@@ -250,14 +253,14 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid white;
+        border: 2px solid var(--white);
         transition: .3s background;
         cursor: pointer;
-        color: white;
+        color: var(--white);
     }
     .exp .grid div:hover{
             background:var(--white);
-            color: black;
+            color: var(--black);
 
         }
         .exp .grid span{
@@ -316,9 +319,16 @@ img{
     .about .contact {
         margin-block: 2em;
     }
+    .contact h1{
+        margin-bottom:1em ;
+    }
     .about .contact p{
         margin-block-end: 1em;
     }
+    .about .contact a{
+        vertical-align: middle;
+    }
+    
     .main-footer {
         padding-block: 1em;
         text-align: center;
