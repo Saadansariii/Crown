@@ -63,12 +63,12 @@ img{
     transition: .5s height;
 }
 .items .list.open{
-    height: 22vh;
+    height: 35vh;
 }
 .items .list li{
-    margin-block: .1em;
     font-size: 1.3em;
     text-align: center;
+    padding-block: .5em;
 }
 .button .line{
     transition: .5s;
