@@ -61,9 +61,10 @@ img{
     width: 100%;
     height: 0vh;
     transition: .5s height;
+    z-index: 3;
 }
 .items .list.open{
-    height: 35vh;
+    height: 30vh;
 }
 .items .list li{
     font-size: 1.3em;
