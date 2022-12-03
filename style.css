@@ -52,7 +52,7 @@ img{
 }
  .items{
     position: fixed;
-    top: 12vh;
+    top: 11vh;
     z-index: 4;
     width: 100%;
 }
@@ -63,7 +63,7 @@ img{
     transition: .5s height;
 }
 .items .list.open{
-    height: 30vh;
+    height: 25vh;
 }
 .items .list li{
     margin-block: .1em;
