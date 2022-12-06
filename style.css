@@ -130,8 +130,8 @@ img{
     width: 60px;
     background: transparent;
     position: fixed;
-    bottom: 3em;
-    right: 10px;
+    bottom: 5em;
+    right: 20px;
     z-index: 3;
 }
 /* Enquiry */
@@ -356,8 +356,8 @@ img{
         padding-block: 1em;
         text-align: center;
         font-size: 1.2em;
-        background: white;
-        color: black;
+        background: #423434;
+        color: white;
     }
 
 
@@ -400,9 +400,22 @@ img{
 }
 
 /* Contact  */
-.contact-info{
-    background: red;
+.contact-info h1{
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-info h1 span{
+    color: orangered;
+}
+.contact-info .flex{
+    display: flex;
+}
+.contact-info .flex{
+    margin-block: 2em;
 }
 .contact-info .flex ion-icon{
-    font-size: 5em;
+    font-size: 1.5em;
+    margin-right: .5em;
 }
