@@ -434,7 +434,3 @@ img{
 .product-section .grid img:nth-child(even){
     grid-column: 5/9;
 }
-.product-section .grid img:nth-child(21){
-    grid-column: 3/7;
-    margin-bottom: 2em;
-}
